@@ -1,7 +1,7 @@
-const CACHE = 'english-daily-v1';
+const CACHE = 'english-daily-v2';
 const BASE = '/english/';
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll([BASE, `${BASE}manifest.webmanifest`, `${BASE}icon.svg`])).then(() => self.skipWaiting()));
+  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll([BASE, `${BASE}manifest.webmanifest`, `${BASE}icon.svg`, `${BASE}speakout-pre-intermediate-wordlist.pdf`])).then(() => self.skipWaiting()));
 });
 self.addEventListener('activate', event => event.waitUntil(self.clients.claim()));
 self.addEventListener('fetch', event => {
