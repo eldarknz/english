@@ -21,3 +21,4 @@ html,body{overflow-x:hidden}
   .next{margin:10px 0 0;width:100%}
 }
 .alphabet{display:flex;flex-wrap:wrap;gap:6px;margin:-8px 0 24px}.alphabet button{min-width:42px;padding:8px 10px;background:#fff;color:#285f5a;border:1px solid #ccd8d1}.alphabet button.active{background:#285f5a;color:#fff}.empty{padding:24px;background:#fff;border:1px solid #e1e7e2;border-radius:12px;color:#667572}
+.sort-buttons{display:flex;gap:4px}.sort-buttons button{min-width:44px;padding:10px;background:#fff;color:#285f5a;border:1px solid #ccd8d1}.sort-buttons button.active{background:#285f5a;color:#fff}
