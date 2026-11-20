@@ -13,6 +13,7 @@ html,body{overflow-x:hidden}
   .reading{padding:24px 20px}
   .reading table{display:block;overflow-x:auto}
 }
+@media(max-width:850px){.main>header{position:sticky;top:0;z-index:4}}
 @media(max-width:480px){
   .hero{padding:28px 20px}
   .hero p,.heading p{font-size:1rem}
