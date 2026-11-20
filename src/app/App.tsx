@@ -1,0 +1,4 @@
+import { Routes, Route } from 'react-router-dom';
+import { Layout } from '../components/layout/Layout';
+import { Home, Vocabulary, VocabularySetPage, Documents, DocumentPage, Tests, TestPage, NotFound } from '../pages/Pages';
+export function App(){return <Layout><Routes><Route path="/" element={<Home/>}/><Route path="/vocabulary" element={<Vocabulary/>}/><Route path="/vocabulary/:id" element={<VocabularySetPage/>}/><Route path="/materials" element={<Documents kind="materials"/>}/><Route path="/materials/:id" element={<DocumentPage kind="materials"/>}/><Route path="/texts" element={<Documents kind="texts"/>}/><Route path="/texts/:id" element={<DocumentPage kind="texts"/>}/><Route path="/tests" element={<Tests/>}/><Route path="/tests/:id" element={<TestPage/>}/><Route path="*" element={<NotFound/>}/></Routes></Layout>}
