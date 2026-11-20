@@ -1,0 +1,12 @@
+{
+  "name": "English daily",
+  "short_name": "English daily",
+  "description": "Материалы и практика для изучения английского языка",
+  "lang": "ru",
+  "start_url": "/english/",
+  "scope": "/english/",
+  "display": "standalone",
+  "background_color": "#f7f8f6",
+  "theme_color": "#163b3b",
+  "icons": [{"src":"/english/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

@@ -5,6 +5,7 @@ const root = join(process.cwd(), 'content');
 const ids = new Set<string>();
 function files(dir:string):string[] { return readdirSync(dir,{withFileTypes:true}).flatMap(e => e.isDirectory()?files(join(dir,e.name)):[join(dir,e.name)]); }
 for (const file of files(root)) {
+  if (!file.endsWith('.json') && !file.endsWith('.md')) continue;
   const raw = readFileSync(file,'utf8');
   let data:any;
   try { data = file.endsWith('.json') ? JSON.parse(raw) : yaml.load(raw.split('---')[1] ?? ''); } catch (e) { throw new Error(`${file}: invalid data (${e})`); }
